@@ -1,0 +1,154 @@
+{
+  "info": {
+    "_postman_id": "284581c7-3901-4570-9699-c9692149a4c0",
+    "name": "BlueState",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23874586"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://oriol-raventos-back-final-project-202209.onrender.com/users/login",
+          "protocol": "https",
+          "host": [
+            "oriol-raventos-back-final-project-202209",
+            "onrender",
+            "com"
+          ],
+          "path": ["users", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"MaStEr\",\r\n    \"password\": \"MaStEr\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://oriol-raventos-back-final-project-202209.onrender.com/users/register",
+          "protocol": "https",
+          "host": [
+            "oriol-raventos-back-final-project-202209",
+            "onrender",
+            "com"
+          ],
+          "path": ["users", "register"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LoadAllContacts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://oriol-raventos-back-final-project-202209.onrender.com/contact/list",
+          "protocol": "https",
+          "host": [
+            "oriol-raventos-back-final-project-202209",
+            "onrender",
+            "com"
+          ],
+          "path": ["contact", "list"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LoadContact",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2QxYjk2YTE4N2FlMmVhMTM1YTg5NyIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2Njk2NTY0NzIsImV4cCI6MTY2OTkxNTY3Mn0.MNmZ10IaNvB73jaU6ZTNukNq5IFu7aMIC5Shi3JHY14",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://oriol-raventos-back-final-project-202209.onrender.com/contact/637e36a2af517156aa098996",
+          "protocol": "https",
+          "host": [
+            "oriol-raventos-back-final-project-202209",
+            "onrender",
+            "com"
+          ],
+          "path": ["contact", "637e36a2af517156aa098996"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteContact",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://oriol-raventos-back-final-project-202209.onrender.com/contact/delete/id",
+          "protocol": "https",
+          "host": [
+            "oriol-raventos-back-final-project-202209",
+            "onrender",
+            "com"
+          ],
+          "path": ["contact", "delete", "id"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddNewContact",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://oriol-raventos-back-final-project-202209.onrender.com/contact/add-new-contact",
+          "protocol": "https",
+          "host": [
+            "oriol-raventos-back-final-project-202209",
+            "onrender",
+            "com"
+          ],
+          "path": ["contact", "add-new-contact"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
